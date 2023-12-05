@@ -12,14 +12,14 @@ Eso sí, ten en cuenta que **pueden existir paréntesis anidados**, por lo que
 debes invertir los caracteres en el orden correcto.
 
 ```js
-const a = decode('hola (odnum)')
-console.log(a) // hola mundo
+const a = decode("hola (odnum)");
+console.log(a); // hola mundo
 
-const b = decode('(olleh) (dlrow)!')
-console.log(b) // hello world!
+const b = decode("(olleh) (dlrow)!");
+console.log(b); // hello world!
 
-const c = decode('sa(u(cla)atn)s')
-console.log(c) // santaclaus
+const c = decode("sa(u(cla)atn)s");
+console.log(c); // santaclaus
 
 // Paso a paso:
 // 1. Invertimos el anidado -> sa(ualcatn)s
